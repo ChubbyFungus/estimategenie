@@ -1,0 +1,51 @@
+/* Previous styles remain the same */
+
+/* Add these slider-specific styles */
+.slider-container {
+  padding: 1rem 0;
+}
+
+[class*="SliderRoot"] {
+  position: relative;
+  display: flex;
+  align-items: center;
+  user-select: none;
+  touch-action: none;
+  height: 20px;
+  width: 100%;
+}
+
+[class*="SliderTrack"] {
+  background-color: rgba(255, 255, 255, 0.2);
+  position: relative;
+  flex-grow: 1;
+  height: 6px;
+  border-radius: 9999px;
+}
+
+[class*="SliderRange"] {
+  position: absolute;
+  background-color: #D4AF37;
+  height: 100%;
+  border-radius: 9999px;
+}
+
+[class*="SliderThumb"] {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-color: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  transition: all 0.2s;
+}
+
+[class*="SliderThumb"]:hover {
+  background-color: #D4AF37;
+  transform: scale(1.1);
+}
+
+[class*="SliderThumb"]:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(212, 175, 55, 0.3);
+}
